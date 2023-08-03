@@ -1,0 +1,306 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: $black;
+    font-size: 1 rem;
+    line-height: 1.5;
+    // height: 300vh;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 100;
+}
+
+
+h1 {
+
+    font-size: $font-xt;
+
+    @media (max-width: 576px) {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+h4 {
+    @media (max-width: 576px) {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+
+
+
+p {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: $secTextColor;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ul {
+    font-size: $font-main;
+    font-weight: 300;
+    line-height: 2.3;
+    color: $secTextColor;
+}
+
+// helper classes for text padding
+
+.text--pt {
+    padding-top: 1.875rem;
+}
+
+.text--px {
+    padding: 0 50px;
+}
+
+
+
+
+// helper classes for clean alignment
+
+.container {
+    max-width: 69.375rem;
+    margin: 0 auto;
+
+    &--pall {
+        padding-top: 5.375rem;
+        padding-right: 1.5rem;
+        padding-bottom: 5.375rem;
+        padding-left: 1.5rem;
+    }
+
+    &--px {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    &--py {
+        padding-top: 5.375rem;
+        padding-bottom: 5.375rem;
+    }
+
+    &--pt {
+        padding-top: 5.375rem;
+    }
+
+    &--pr {
+        padding-right: 1.5rem;
+    }
+
+    &--pb {
+        padding-bottom: 5.375rem;
+    }
+
+    &--pl {
+        padding-left: 1.5rem;
+    }
+
+}
+
+.mb {
+    margin-bottom: 3.75rem;
+}
+
+
+.mbt {
+    margin-bottom: 1.75rem;
+}
+
+.text-spacing {
+    margin-bottom: $font-text-space;
+}
+
+.fm {
+    font-size: $font-sm;
+}
+
+
+// button style
+
+.cta {
+
+    a {
+        font-weight: 100;
+        color: $white;
+        background-color: $mainColor;
+        padding: 18px 34px;
+        border-radius: 6px;
+        transition: 0.26s ease-in-out;
+
+        @media (max-width: 576px) {
+            padding: 12px 24px;
+        }
+
+    }
+
+    a:hover {
+        background-color: $bgColor;
+    }
+
+}
+
+
+.btn--white {
+    button {
+        color: $white;
+        border: 1px solid $white;
+    }
+}
+
+.btn--black {
+    button {
+        color: $bgColor;
+        border: 1px solid $bgColor;
+    }
+}
+
+
+button {
+
+    outline: none;
+    border: 1px solid red;
+    border: none;
+    background: none; 
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+}
+
+
+
+.ext--white {
+    background-color: $mainColor;
+
+    .extra__text {
+        a {
+            color: $white;
+            border-bottom: 1px solid $white;
+        }
+    }
+
+    p {
+        // font-size: $font-lg;
+        color: $white;
+    }
+
+
+}
+
+.ext--black {
+
+    // background-color: $mainColor;
+    .extra__text {
+        a {
+            color: black;
+            border-bottom: 1px solid black;
+        }
+    }
+
+    p {
+        // font-size: $font-lg;
+        color: black;
+    }
+
+
+}
+
+.bb {
+    border-bottom: 1px solid $secTextColor;
+}
+
+.section--mainColor {
+    background-color: $mainColor;
+}
+
+.form--colorWhite {
+    p {
+        color: $white;
+    }
+
+    input {
+        color: white;
+    }
+
+    input::placeholder {
+        color: white;
+        opacity: 1;
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+
+    textarea {
+        border-bottom: 1px solid $white;
+        color: white;
+    }
+
+    textarea::placeholder {
+        color: white;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+
+        color: $white;
+
+    }
+
+    h4 {
+        border: 1px solid $white;
+    }
+
+}
+
+.form--colorBlack {
+    p {
+        color: black;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+
+        color: black;
+
+    }
+
+    h4 {
+        border: 1px solid black;
+    }
+
+}
+
+.subscript__text {
+    p {
+        font-size: 0.9rem;
+    }
+    
+}

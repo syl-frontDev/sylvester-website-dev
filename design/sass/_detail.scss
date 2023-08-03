@@ -1,0 +1,21 @@
+.detail {
+
+    // background-color: teal;
+    &__title {
+        p {
+            font-size: 1.875rem;
+            font-weight: 100;
+        } 
+    }
+
+    &__text{
+        p{
+            font-size: 1.1rem;
+        }
+        
+        // background-color: #aaa;
+    }
+
+   
+    
+}

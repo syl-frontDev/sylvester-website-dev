@@ -1,0 +1,43 @@
+.project {
+    background-color: $lightGrayishBlue;
+    padding-bottom: 3rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        height: 80vh;
+    }
+
+    &__start {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+
+        h1 {
+            font-size: $font-xlg;
+            font-weight: bolder;
+        }
+
+        img {
+            width: 12%;
+        }
+    }
+
+    &__outline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 10rem;
+        // overflow: hidden;
+
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+    }
+}

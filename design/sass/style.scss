@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Darlston';
+    src: url(/design/font/darleston/Darleston.otf);
+}
+
+@font-face {
+    font-family: 'Scorno';
+    src: url(/design/font/Scorno/Scorno_thin.otf);
+}
+
+@font-face {
+    font-family: 'Scorno_i';
+    src: url(/design/font/Scorno/Scorno_thin_italic.otf);
+}
+
+@font-face {
+    font-family: 'katherine';
+    src: url(/design/font/Katherine/Katherine\ Free.otf);
+}
+
+// Home page
+@import "variable";
+@import "globals";
+@import "header";
+@import "hero";
+@import "caption";
+@import "gallery";
+@import "lightbox";
+@import "offering";
+@import "package";
+@import "testimonial";
+@import "talk";
+@import "onboarding";
+@import "project";
+@import "form";
+@import "footer";
+
+
+// About Page
+@import "abouthero";
+@import "about";
+@import "detail";
+@import "strip";
+@import "faq";
+@import "extra";
+@import "follow";
+
+// About Page
+@import "contact";
+
+// Portrait Page
+@import "portrait";
+
+
+// Packages Page
+@import "packages";
+@import "frame";

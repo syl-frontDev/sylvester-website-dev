@@ -1,0 +1,248 @@
+.portrait {
+
+    &__title {
+        p {
+            font-weight: 100;
+            font-size: $font-med-title;
+        }
+
+    }
+
+}
+
+.por_gallery {
+
+    // background-color: teal;
+    background-color: $white;
+
+
+    // Use resourse to regrasp the grid 
+    // concepts - https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
+
+    &__column {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(29, 5vw);
+        gap: 1.875rem;
+        // border: 1px solid teal;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        object-fit: cover;
+        transition: 0.2s linear;
+
+    }
+
+    &__img:hover {
+        transform: scale(1.01);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    }
+
+
+    &__popup-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        z-index: 100;
+        display: none;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 5px solid $white;
+            border-radius: 5px;
+            width: auto;
+            height: 650px;
+            object-fit: cover;
+        }
+
+        span {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            cursor: pointer;
+            font-size: 50px;
+            color: $white;
+            z-index: 100;
+        }
+    }
+
+    &__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+
+    &__item--2 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+
+
+    &__item--3 {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+
+    &__item--4 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+
+    &__item--5 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    &__item--6 {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+
+    &__item--7 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 10;
+    }
+
+    &__item--8 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 10;
+    }
+
+    &__item--9 {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 8;
+        grid-row-end: 13;
+    }
+
+    &__item--10 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 10;
+        grid-row-end: 15;
+    }
+
+    &__item--11 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 10;
+        grid-row-end: 12;
+    }
+
+    &__item--12 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 15;
+        grid-row-end: 18;
+    }
+
+
+    &__item--13 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 12;
+        grid-row-end: 17;
+    }
+
+
+    &__item--14 {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 13;
+        grid-row-end: 18;
+    }
+
+
+    &__item--15 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 18;
+        grid-row-end: 25;
+    }
+
+
+    &__item--16 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 17;
+        grid-row-end: 19;
+    }
+
+
+    &__item--17 {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 18;
+        grid-row-end: 20;
+    }
+
+
+    &__item--18 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 25;
+        grid-row-end: 30;
+    }
+
+    &__item--19 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 19;
+        grid-row-end: 21;
+    }
+
+
+    &__item--20 {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 20;
+        grid-row-end: 25;
+    }
+
+
+    &__item--21 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 21;
+        grid-row-end: 25;
+    }
+
+
+    &__item--22 {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 25;
+        grid-row-end: 30;
+    }
+
+
+
+
+}

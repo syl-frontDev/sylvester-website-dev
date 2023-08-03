@@ -1,0 +1,89 @@
+.package {
+
+    // I need to remove the excess margin ontop this element
+    background-color: $black;
+
+    // margin-top: -80px;
+
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        width: 100%;
+        height: 90vh;
+    }
+
+    &__item {
+        background-color: $lightGrayishBlue;
+        flex: 33%;
+        // border: 1px solid teal;
+        width: 100px;
+        height: 500px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0 5px 15px rgba(73, 72, 72, 0.3);
+        transition: 0.2s linear;
+
+    }
+
+    &__item:hover {
+        transform: scale(1.02);
+
+    }
+
+    &__image {
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // background-color: #ccc;
+        width: auto;
+
+        h2 {
+            color: $black;
+            font-size: $font-med;
+        }
+
+        &__more {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-size: $font-sm;
+                font-weight: 100;
+            }
+            
+
+            &__arrow {
+                // width: 10px;
+                img {
+                    width: 12px;
+                }
+                
+            }
+        }
+
+        
+
+        
+    }
+
+
+
+
+}

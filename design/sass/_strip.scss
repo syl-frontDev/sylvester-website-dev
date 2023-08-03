@@ -1,0 +1,168 @@
+.strip {
+    background-color: teal;
+
+    &__img {
+        flex: 40%;
+        position: relative;
+        // I need teh image below to scroll
+        background-image: url(/images/product/product_photography_by_sylvester_harding-28.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 20rem;
+        width: 100%;
+    }
+}
+
+.home__strip {
+    background-color: $black;
+
+    &__container {
+        position: relative;
+    }
+
+    &__img {
+        background-image: url(/images/portrait/portrait_photography_by_sylvester_harding-19.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 80vh;
+        width: 100%;
+        opacity: .6;
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        text-align: center;
+
+
+        &__title {
+
+            width: 600px;
+
+            h1 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: $white;
+                font-weight: 100;
+                font-size: $font-xlg;
+                line-height: 60px;
+                background: transparent;
+
+                @media (max-width: 576px) {
+                    font-size: 1.5rem;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        &__sub {
+            width: 369px;
+
+            p {
+                font-family: 'Scorno_i';
+                font-size: $font-text-space;
+                line-height: 20px;
+                color: $white;
+            }
+        }
+
+    }
+}
+
+.booking__strip {
+    background-color: $black;
+
+
+
+    &__container {
+        position: relative;
+
+
+        p,
+        h1,
+        h2 {
+            color: $black;
+        }
+    }
+
+    &__img {
+        background-image: url(/images/personal/now_booking_by_sylvester_harding-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 100vh;
+        width: 100%;
+        opacity: .6;
+    }
+
+    &__text {
+        width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+
+
+        &__title {
+            padding-top: 50px;
+
+            h1 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: 100;
+                font-size: $font-xlg;
+                line-height: 60px;
+                background: transparent;
+
+                @media (max-width: 576px) {
+                    font-size: 1.5rem;
+                    line-height: 20px;
+                }
+            }
+
+            p {
+                font-size: $font-xlg;
+                font-family: 'Darlston';
+            }
+        }
+
+        &__sub {
+            width: 615px;
+
+            // p {
+            //     // line-height: 20px;
+            // }
+        }
+
+    }
+}
+
+
+// detail page
+.detail__strip {
+    background-color: $black;
+
+    &__img {
+        background-image: url(/images/personal/now_booking_by_sylvester_harding-01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 100vh;
+        width: 100%;
+        opacity: .6;
+    }
+}

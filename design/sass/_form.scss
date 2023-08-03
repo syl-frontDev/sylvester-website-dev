@@ -1,0 +1,145 @@
+.form {
+    // needs some more refinement
+    // background-color: $mainColor;
+
+    &__wrapper {
+        // background-color: #aaa;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 7.75rem;
+        align-items: center;
+
+    }
+
+    &__text {
+        display: flex;
+        flex: 40%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        // color: $white;
+
+        p {
+            font-weight: 100;
+            font-size: 1rem;
+        }
+
+        h1 {
+            line-height: 1.1;
+            font-weight: 600;
+            font-size: 2.123rem;
+        }
+    }
+
+    &__container {
+
+        display: flex;
+        flex: 60%;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            // color: $white;
+            font-size: $font-main;
+            margin-bottom: 12px;
+        }
+
+        form {
+
+            // align-items: left;
+            width: 32.7rem;
+            height: 28.125rem;
+            // padding: 0 90px 0 0;
+            border: 1px solid red;
+
+        }
+    }
+
+
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        // border-bottom: 1px solid red;
+
+
+        input {
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            font-weight: 100;
+            // appearance: none;
+            // color: $white;
+            border-bottom: 1px solid $white;
+            background: transparent;
+
+
+        }
+
+
+
+        hr {
+            width: 80%;
+        }
+
+    }
+
+    &__img {
+
+        img {
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1rem;
+        font-weight: 500;
+
+        button {
+            border-radius: 4px;
+            padding: 12px 45px;
+            margin-top: 10px;
+            transition: 0.2s ease-in-out;
+            // background: white;
+            // color: $white;
+        }
+
+        button:hover {
+            color: $white;
+            background-color: $mainColorDarker;
+        }
+    }
+
+
+
+
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: vertical;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 100;
+    // appearance: none;
+    // color: $white;
+    background: transparent;
+}
+
+textarea::placeholder {
+    opacity: 1;
+    font-size: 0.8rem;
+    font-weight: 100;
+}

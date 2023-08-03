@@ -1,0 +1,98 @@
+.follow {
+    // background-color: $lightGrayishBlue;
+
+    &__title {
+        p {
+            color: $grayishBlue;
+            font-size: $font-xt;
+            font-weight: 100;
+            text-align: center;
+        }
+    }
+
+
+    // Use resourse to regrasp the grid 
+    // concepts - https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
+
+    &__column {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 5vw);
+        gap: 1.875rem;
+    }
+
+    &__item {
+        overflow: hidden;
+        // cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            object-fit: cover;
+            transition: 0.26s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    &__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    &__item--2 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    &__item--3 {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    &__item--4 {
+        grid-column-start: 10;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    &__item--5 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 7;
+    }
+
+    &__item--6 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 7;
+    }
+
+    &__item--7 {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 4;
+        grid-row-end: 7;
+    }
+
+    &__item--8 {
+        grid-column-start: 10;
+        grid-column-end: 13;
+        grid-row-start: 4;
+        grid-row-end: 7;
+    }
+
+
+}

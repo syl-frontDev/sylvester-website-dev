@@ -304,3 +304,53 @@ button {
     }
     
 }
+
+
+// Image alignment
+// ct mean center top
+// lc mean left center
+.ct {
+    img {
+        object-position: center -10px;
+    }
+}
+
+.c2 {
+    img {
+        object-position: center -50px;
+    }
+}
+
+.c3 {
+    img {
+        object-position: center -83px;
+    }
+}
+
+.c4 {
+    img {
+        object-position: center -26px;
+    }
+}
+
+.c5 {
+    img {
+        object-position: center -230px;
+    }
+}
+.c6 {
+    img {
+        object-position: center -45px;
+    }
+}
+.c7 {
+    img {
+        object-position: center -102px;
+    }
+}
+
+.lc {
+    img {
+        object-position: -110px center;
+    }
+}

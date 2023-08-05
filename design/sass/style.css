@@ -255,6 +255,46 @@ button {
   font-size: 0.9rem;
 }
 
+.ct img {
+  -o-object-position: center -10px;
+     object-position: center -10px;
+}
+
+.c2 img {
+  -o-object-position: center -50px;
+     object-position: center -50px;
+}
+
+.c3 img {
+  -o-object-position: center -83px;
+     object-position: center -83px;
+}
+
+.c4 img {
+  -o-object-position: center -26px;
+     object-position: center -26px;
+}
+
+.c5 img {
+  -o-object-position: center -230px;
+     object-position: center -230px;
+}
+
+.c6 img {
+  -o-object-position: center -45px;
+     object-position: center -45px;
+}
+
+.c7 img {
+  -o-object-position: center -102px;
+     object-position: center -102px;
+}
+
+.lc img {
+  -o-object-position: -110px center;
+     object-position: -110px center;
+}
+
 @media (max-width: 576px) {
   .header__nav {
     display: flex;
@@ -508,40 +548,6 @@ button {
 
 .gallery {
   background-color: #ffffff;
-  /*
-      &__popup-image {
-          position: fixed;
-          top: 0;
-          left: 0;
-          background: rgba(0, 0, 0, 0.6);
-          height: 100%;
-          width: 100%;
-          z-index: 100;
-          display: none;
-
-          img {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              border: 5px solid $white;
-              border-radius: 5px;
-              width: auto;
-              height: 650px;
-              object-fit: cover;
-          }
-
-          span {
-              position: absolute;
-              top: 0;
-              right: 10px;
-              cursor: pointer;
-              font-size: 50px;
-              color: $white;
-              z-index: 100;
-          }
-      }
-      */
 }
 .gallery__column {
   display: grid;
@@ -1633,6 +1639,13 @@ textarea::placeholder {
   opacity: 0.6;
 }
 
+.astrip__img {
+  background-image: url(/images/portrait/portrait_photography_by_sylvester_harding-60.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -1190px;
+}
+
 .faq {
   background-color: #f3f4f6;
 }
@@ -1789,7 +1802,7 @@ textarea::placeholder {
 }
 .contact__image {
   position: absolute;
-  background-image: url(/images/personal/teammates_by_sylvester_harding-01.jpg);
+  background-image: url(/images/product/product_photography_by_sylvester_harding-31-inv.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

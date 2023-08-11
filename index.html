@@ -15,51 +15,81 @@
     <!-- Use cmd + shift + l to select all the instances with the 
     same name and change class name simultaneously -->
 
-    <nav class="header">
-        <div class="header__nav mb container">
-            <div class="header__logo">
-                <a href="/index.html"><img src="images/logo-black.png" alt="syl_thephotographer logo"></a>
-            </div>
-    
-            <div class="header__menu">
-                <div class="header__item">
-                    <a href="/about.html" class="nav__item">ABOUT</a>
-                </div>
-
-                <div class="header__item">
-                    <a href="/detail.html" class="nav__item">DETAILS</a>
+    <header class="header">
+        <div class="overlay has-fade"></div>
+            <nav class="header__nav mb container">
+                <div class="header__logo">
+                    <a href="/index.html"><img src="images/logo-black.png" alt="syl_thephotographer logo"></a>
                 </div>
     
-                <div class="header__item">
-                    <a href="/commercial.html" class="nav__item">COMMERCIAL</a>
-                </div>
-    
-                <div class="header__item">
-                    <a href="/events.html" class="nav__item">EVENTS</a>
-                </div>
-    
-                <div class="header__item">
-                    <a href="/portrait.html" class="nav__item">PORTRAITS</a>
-                </div>
-    
-                <div class="header__packages header__item">
-                    <button class="header__dropbtn">
-                        PACKAGES <img src="/images/icons/icons8-arrow-down-100.png" alt="">
-                    </button>
-                    <div class="header__dropdown__contents">
-                        <a href="/por_packages.html" class="nav__item">Portrait Packages</a>
-                        <a href="/event_packages.html" class="nav__item">Events Packages</a>
-                        <a href="/pdt_packages.html" class="nav__item">Product Packages</a>
+                <a href="#" id="btnhamburger" class="header__hamburger hide-for-desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+        
+                <div class="header__links hide-for-mobile">
+                    <div class="header__menu hide-for-mobile">
+                        <div class="header__item">
+                            <a href="/about.html" class="nav__item">ABOUT</a>
+                        </div>
+        
+                        <div class="header__item">
+                            <a href="/detail.html" class="nav__item">DETAILS</a>
+                        </div>
+            
+                        
+                        <div class="header__item">
+                            <a href="/commercial.html" class="nav__item">COMMERCIAL</a>
+                        </div>
+            
+                        <div class="header__item">
+                            <a href="/events.html" class="nav__item">EVENTS</a>
+                        </div>
+            
+                        <div class="header__item">
+                            <a href="/portrait.html" class="nav__item">PORTRAITS</a>
+                        </div>
+            
+                        <div class="header__packages header__item">
+                            <button class="header__dropbtn">
+                                PACKAGES <img src="/images/icons/icons8-arrow-down-100.png" alt="">
+                            </button>
+                            <div class="header__dropdown__contents">
+                                <a href="/por_packages.html" class="nav__item">Portrait Packages</a>
+                                <a href="/event_packages.html" class="nav__item">Events Packages</a>
+                                <a href="/pdt_packages.html" class="nav__item">Product Packages</a>
+                            </div>
+                        </div>
+                            
+                        <div class="header__item">
+                            <a href="/contact.html" class="nav__item">CONTACT</a>
+                        </div>
+                        
                     </div>
                 </div>
-                    
-                <div class="header__item">
-                    <a href="/contact.html" class="nav__item">CONTACT</a>
+                
+            </nav>
+        <div class="header__toggle has-fade">
+            <a href="/about.html" class="nav__item">ABOUT</a>
+            <a href="/detail.html" class="nav__item">DETAILS</a>
+            <a href="/commercial.html" class="nav__item">COMMERCIAL</a>
+            <a href="/events.html" class="nav__item">EVENTS</a>
+            <a href="/detail.html" class="nav__item">PORTRAITS</a>
+            <div class="header__packages">
+                <button class="header__dropbtn">
+                    PACKAGES <img src="/images/icons/icons8-arrow-down-100.png" alt="">
+                </button>
+                <div class="header__dropdown__contents">
+                    <a href="/por_packages.html" class="nav__item">Portrait Packages</a>
+                    <a href="/event_packages.html" class="nav__item">Events Packages</a>
+                    <a href="/pdt_packages.html" class="nav__item">Product Packages</a>
                 </div>
             </div>
+            <a href="/contact.html" class="nav__item">CONTACT</a>
         </div>
         
-    </nav>
+    </header>
 
 
     <!-- hero section -->
@@ -102,7 +132,7 @@
 
     <section class="caption">
 
-        <div class="caption__wrapper container container--pall">
+        <div class="caption__wrapper container container--py">
             <div class="caption__title container--pb">
                 <h1>Sylvester P Harding</h1>
                 <h4>PHOTOGRAPHER & FRONTEND WEB DEV</h4>
@@ -119,7 +149,7 @@
                 </div>
     
                 <div class="caption__item">
-                    <p>Fun, friendly and<br>knowledgable!<br>Lots of experience</p>
+                    <p>Fun, friendly and knowledgable! Lots of experience</p>
                 </div>
             </div>
             
@@ -179,7 +209,7 @@
     <!-- Offering section 1 -->
 
     <div class="offering">
-        <div class="offering__container">
+        <div class="offering__container container">
             <div class="offering__container__items">
 
                 <!-- Item 1 -->
@@ -213,8 +243,6 @@
                             
                         </div>
                         
-                        
-                        
                     </div>
 
                     <div class="offering__container__items__item__image">
@@ -231,7 +259,7 @@
     <!-- Offering section 2 -->
 
     <div class="offering item__2 container--py">
-        <div class="offering__container">
+        <div class="offering__container container">
             <div class="offering__container__items">
 
                 <!-- Item 2 -->
@@ -318,7 +346,7 @@
     <div class="offering__container">
         <div class="offering__container__items">
 
-            <!-- Item 2 -->
+            <!-- Item -->
             <div class="offering__container__items__item talk__wrapper">
 
                 <div class="offering__container__items__item__text">
@@ -715,7 +743,7 @@
            
         </div>
 
-        <div class="footer__items footer__items__design">
+        <div class="footer__items__design">
             <p>Designed by Sylvester P Harding - UI Design</p>
         </div>
         

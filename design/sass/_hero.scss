@@ -2,8 +2,10 @@
 
     background-color: $black;
 
-
-
+    @include breakpoint-down(medium) {
+        display: flex;
+        flex-direction: column;
+    }
 
     &__container {
 
@@ -20,12 +22,10 @@
         min-height: 70rem;
         opacity: .6;
 
-        @media (max-width: 576px) {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        @include breakpoint-down(medium) {
+            min-height: 37rem;
         }
+
     }
 
     &__items {
@@ -63,11 +63,16 @@
                 font-size: $font-xlg;
                 line-height: 60px;
                 background: transparent;
+            }
 
-                @media (max-width: 576px) {
-                    font-size: 1.5rem;
-                    line-height: 20px;
+            @include breakpoint-down(medium) {
+                width: 260px;
+                margin-bottom: 0.5rem;
+                h1 {
+                    font-size: $font-med;
+                    line-height: 30px;
                 }
+
             }
         }
 
@@ -80,18 +85,27 @@
                 line-height: 20px;
                 color: $white;
             }
+
+            @include breakpoint-down(medium) {
+                width: 230px;
+                p {
+                    font-size: $font-sm;
+                }
+                
+            }
         }
 
 
-        
+
 
         hr {
             width: 100%;
             margin: 15px 0 0 0;
 
-            @media (max-width: 576px) {
+            @include breakpoint-down(medium) {
                 width: 100%;
             }
+
         }
 
         h4 {
@@ -101,7 +115,7 @@
             line-height: 50px;
             background: transparent;
 
-            @media (max-width: 576px) {
+            @include breakpoint-down(medium) {
                 font-size: 0.5rem;
                 line-height: 20px;
             }
@@ -110,7 +124,7 @@
 
     &__cta {
 
-        @media (max-width: 576px) {
+        @include breakpoint-down(medium) {
             font-size: 0.5rem;
             line-height: 20px;
         }

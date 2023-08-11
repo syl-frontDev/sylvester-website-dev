@@ -43,10 +43,14 @@
         background: transparent;
         text-align: center;
 
+        
 
         &__title {
 
-            width: 600px;
+            // width: 600px;
+            @include breakpoint-down(medium) {
+                margin-bottom: 10px;
+            }
 
             h1 {
                 font-family: Georgia, 'Times New Roman', Times, serif;
@@ -56,10 +60,6 @@
                 line-height: 60px;
                 background: transparent;
 
-                @media (max-width: 576px) {
-                    font-size: 1.5rem;
-                    line-height: 20px;
-                }
             }
         }
 
@@ -72,6 +72,22 @@
                 line-height: 20px;
                 color: $white;
             }
+        }
+
+        @include breakpoint-down(medium) {
+            margin-bottom: 0;
+            
+            h1 {
+                font-size: $font-med-title;
+                margin: 0 200px;
+                line-height: 35px;
+            }
+
+            p {
+                font-size: $font-main;
+                line-height: 20px;
+            }
+
         }
 
     }
@@ -104,6 +120,7 @@
     }
 
     &__text {
+        height: 80vh;
         width: 800px;
         position: absolute;
         top: 50%;
@@ -117,9 +134,14 @@
         text-align: center;
         background-color: rgba(255, 255, 255, 0.8);
 
+        @include breakpoint-down(medium) {
+            height: auto;
+            width: 100%;    
+        }
+
 
         &__title {
-            padding-top: 50px;
+            padding-top: 3.75rem;
 
             h1 {
                 font-family: Georgia, 'Times New Roman', Times, serif;
@@ -128,20 +150,36 @@
                 line-height: 60px;
                 background: transparent;
 
-                @media (max-width: 576px) {
-                    font-size: 1.5rem;
-                    line-height: 20px;
-                }
             }
 
             p {
                 font-size: $font-xlg;
                 font-family: 'Darlston';
             }
+
+            @include breakpoint-down(medium) {
+                p, h1 {
+                    font-size: $font-xt;
+                }
+
+                h2 {
+                    font-size: $font-lg;
+                }
+            }
+
+            
         }
 
         &__sub {
-            width: 615px;
+            padding: 0 90px;
+
+            @include breakpoint-down(medium) {
+                padding: 0 40px;
+                p {
+                    font-size: $font-sm;
+                }
+            }
+            
 
             // p {
             //     // line-height: 20px;

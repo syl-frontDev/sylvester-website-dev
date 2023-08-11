@@ -11,6 +11,11 @@
         display: grid;
         grid-template-columns: repeat(9, 1fr);
         grid-template-rows: repeat(21, 5vw);
+
+        @include breakpoint-down(medium) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__item {

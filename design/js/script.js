@@ -1,8 +1,41 @@
-// FAQ toggle
+const btnhamburger = document.querySelector('#btnhamburger');
+const body = document.querySelector('body');
+const header = document.querySelector('.header');
+const overlay = document.querySelector('.overlay');
+const fadeElements = document.querySelectorAll('.has-fade');
 
+btnhamburger.addEventListener('click', function () {
+    console.log("open");
+
+    if (header.classList.contains('open')) {
+        body.classList.remove('noscroll');
+        header.classList.remove('open');
+        fadeElements.forEach(function (element) {
+            element.classList.remove('fade-in');
+            element.classList.add('fade-out');
+        });
+
+    }
+    else {
+        body.classList.add('noscroll');
+        header.classList.add('open');
+        fadeElements.forEach(function (element) {
+            element.classList.remove('fade-out');
+            element.classList.add('fade-in');
+        });
+
+    }
+
+});
+
+
+// FAQ toggle
 let firstFaq = document.querySelector('.first');
 let secondFaq = document.querySelector('.second');
 let thirdFaq = document.querySelector('.third');
+let fourthFaq = document.querySelector('.fourth');
+let fifthFaq = document.querySelector('.fifth');
+let sixthFaq = document.querySelector('.sixth');
 let display = 0;
 
 /*
@@ -50,6 +83,39 @@ function thirdFaqFun() {
     }
     else {
         thirdFaq.style.display = 'none';
+        display = 0;
+    }
+}
+function fourthFaqFun() {
+
+    if (display == 0) {
+        fourthFaq.style.display = 'block';
+        display = 1;
+    }
+    else {
+        fourthFaq.style.display = 'none';
+        display = 0;
+    }
+}
+function fifthFaqFun() {
+
+    if (display == 0) {
+        fifthFaq.style.display = 'block';
+        display = 1;
+    }
+    else {
+        fifthFaq.style.display = 'none';
+        display = 0;
+    }
+}
+function sixthFaqFun() {
+
+    if (display == 0) {
+        sixthFaq.style.display = 'block';
+        display = 1;
+    }
+    else {
+        sixthFaq.style.display = 'none';
         display = 0;
     }
 }

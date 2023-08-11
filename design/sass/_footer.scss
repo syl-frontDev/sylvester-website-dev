@@ -7,6 +7,13 @@
         justify-content: center;
         align-items: center;
         height: 19.625rem;
+        width: 100%;
+        padding: 0 3.75rem;
+
+        @include breakpoint-down(medium) {
+            padding: 3.75rem 4.75rem;
+            height: 29.625rem;
+        }
 
 
     }
@@ -15,8 +22,15 @@
         display: flex;
         align-items: center;
         flex-direction: row;
-        width: 1200px;
+        width: 100%;
         justify-content:flex-start;
+
+        &__design {
+            p {
+                color: $white;
+            }
+            
+        }
         
 
         p {
@@ -32,17 +46,40 @@
             p {
                 margin-top: 5px;
             }
+
+            @include breakpoint-down(medium) {
+                p {
+                    font-size: $font-sm;
+                }
+            }
+        }
+
+        @include breakpoint-down(medium) {
+            flex-direction: column;
+
+            p {
+                margin: 0;
+            }
         }
     }
 
     &__column-1 {
         display: flex;
         justify-content: start;
-        flex: 60%;
+        flex: 50%;
 
         p {
+            
             display: flex;
 
+        }
+
+        @include breakpoint-down(medium) {
+            margin-bottom: 3rem;
+            p {
+                line-height: 2.2;
+                font-weight: 400;
+            }
         }
 
     }
@@ -52,13 +89,24 @@
         flex-direction: row;
         // align-items: center;
         justify-content: end;
-        flex: 40%;
+        flex: 50%;
 
         p {
             display: flex;
             text-align: right;
         }
 
+        @include breakpoint-down(medium) {
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 3rem;
+            p {
+                line-height: 2.2;
+                font-weight: 400;
+                text-align: center;
+                padding: 0 0.6rem;
+            }
+        }
     }
 
     &__icons {

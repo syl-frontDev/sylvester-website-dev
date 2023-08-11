@@ -10,6 +10,14 @@
         gap: 7.75rem;
         align-items: center;
 
+        @include breakpoint-down(medium) {
+            // background-color: #aaa;
+            flex-direction: column;
+            gap: 3.75rem;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
     }
 
     &__text {
@@ -21,6 +29,7 @@
         // color: $white;
 
         p {
+            
             font-weight: 100;
             font-size: 1rem;
         }
@@ -29,6 +38,13 @@
             line-height: 1.1;
             font-weight: 600;
             font-size: 2.123rem;
+        }
+
+        @include breakpoint-down(medium) {
+            p {
+                text-align: center;
+                font-weight: 300;
+            }
         }
     }
 

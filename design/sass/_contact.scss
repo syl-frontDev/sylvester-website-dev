@@ -70,6 +70,13 @@
             text-align: left;
             font-size: $font-main;
         }
+
+        // @include breakpoint-down(medium) {
+        //     p {
+        //         text-align: center;
+        //         font-weight: 400;
+        //     }
+        // }
     }
 }
 

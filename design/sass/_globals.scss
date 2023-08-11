@@ -18,7 +18,10 @@ body {
     font-size: 1 rem;
     line-height: 1.5;
     // height: 300vh;
-    overflow-x: hidden;
+
+    &.noscroll {
+        overflow: hidden;
+    }
 }
 
 h1,
@@ -27,6 +30,21 @@ h3,
 h4,
 h5 {
     font-weight: 100;
+}
+
+// Visibility
+.hide-for-mobile {
+    // hide for tablet and mobile
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    // hide for desktop viewport width
+    @include breakpoint-up(large) {
+        display: none;
+    }
 }
 
 
@@ -303,4 +321,54 @@ button {
         font-size: 0.9rem;
     }
     
+}
+
+
+// Image alignment
+// ct mean center top
+// lc mean left center
+.ct {
+    img {
+        object-position: center -10px;
+    }
+}
+
+.c2 {
+    img {
+        object-position: center -50px;
+    }
+}
+
+.c3 {
+    img {
+        object-position: center -83px;
+    }
+}
+
+.c4 {
+    img {
+        object-position: center -26px;
+    }
+}
+
+.c5 {
+    img {
+        object-position: center -230px;
+    }
+}
+.c6 {
+    img {
+        object-position: center -45px;
+    }
+}
+.c7 {
+    img {
+        object-position: center -102px;
+    }
+}
+
+.lc {
+    img {
+        object-position: -110px center;
+    }
 }

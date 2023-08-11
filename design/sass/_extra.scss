@@ -6,6 +6,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+
     }
 
     &__text {
@@ -14,13 +16,25 @@
         font-size: $font-lg;
         gap: 20px;
 
-        
+        @include breakpoint-down(medium) {
+            margin-bottom: 1rem;
+        }
+
+
     }
 
     a {
         transition: 0.36s ease-in-out;
     }
-    
+
+    @include breakpoint-down(medium) {
+        a, p {
+            font-size: $font-sm;
+            gap: 20px;
+        }
+
+    }
+
 
     a:hover {
         transform: scale(1.06);
@@ -29,9 +43,15 @@
     img {
         transition: 0.36s ease-in-out;
     }
-    
+
 
     img:hover {
         transform: scale(1.66);
+    }
+
+    &__name {
+        @include breakpoint-down(medium) {
+            margin-bottom: 1rem;
+        }
     }
 }

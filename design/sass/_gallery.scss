@@ -11,6 +11,11 @@
         display: grid;
         grid-template-columns: repeat(9, 1fr);
         grid-template-rows: repeat(21, 5vw);
+
+        @include breakpoint-down(medium) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -29,56 +34,6 @@
             transform: scale(1.03);
         }
     }
-
-    // &__img {
-    //     width: 100%;
-    //     height: 100%;
-    //     vertical-align: middle;
-    //     overflow: hidden;
-    //     cursor: pointer;
-    //     object-fit: cover;
-    //     transition: 0.2s linear;
-    // }
-
-    // &__img:hover {
-    //     // transform: scale(1.01);
-    //     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    // }
-
-/*
-    &__popup-image {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.6);
-        height: 100%;
-        width: 100%;
-        z-index: 100;
-        display: none;
-
-        img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border: 5px solid $white;
-            border-radius: 5px;
-            width: auto;
-            height: 650px;
-            object-fit: cover;
-        }
-
-        span {
-            position: absolute;
-            top: 0;
-            right: 10px;
-            cursor: pointer;
-            font-size: 50px;
-            color: $white;
-            z-index: 100;
-        }
-    }
-    */
 
     &__item--1 {
         grid-column-start: 1;

@@ -3,9 +3,8 @@
     background-color: $lightGrayishBlue;
 
     &__wrapper {
-        @media (max-width: 576px) {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
+        @include breakpoint-down(medium) {
+            padding: 4rem 3.375rem;
         }
     }
 
@@ -17,9 +16,18 @@
         justify-content: center;
         line-height: 1.2;
 
-        @media (max-width: 576px) {
+        @include breakpoint-down(medium) {
             padding-bottom: 1rem;
             margin-bottom: 1rem;
+
+            h1 {
+                font-size: 1.8rem;
+                font-weight: 400;
+            }
+
+            h4 {
+                font-size: 0.6rem;
+            }
         }
     }
 
@@ -33,22 +41,20 @@
         width: 100%;
         height: auto;
 
-        @media (max-width: 576px) {
-            // border: 1px solid red;
-            display: inline;
-            width: 100%;
+        @include breakpoint-down(medium) {
+            display: flex;
+            flex-direction: column;
         }
     }
 
     &__item {
         display: flex;
-        flex-wrap: wrap;
         p {
             font-size: $font-med;
         font-weight: 100;
         text-align: center;
-        width: 400px;
-        height: 90px;
+        width: 100%;
+        height: 100%;
         // background-color: teal;
         // border: 1px solid red;
 

@@ -16,5 +16,13 @@
             font-size: $font-sm;
             text-align: center;
         }
+
+        @include breakpoint-down(medium) {
+            p {
+                font-size: $font-main;
+                padding: 0 20px;
+            }
+
+        }
     }
 }
